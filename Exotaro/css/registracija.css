@@ -1,0 +1,212 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+ }
+ body{
+    background:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.5)), url(/img/coconut.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ }
+ a{
+    color:black;
+    text-decoration: none;
+}
+a:hover{
+    color:darkcyan;
+}
+header{
+    width: 100%;
+    height: 130px;
+    background-color: whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    display: block;
+    margin-left: 5%;
+    margin-bottom: 15px;
+    height: 150px;
+    width: 150px;
+}
+.burger_meni{
+    display: none;
+    height: 60px;
+    width: 60px;
+ }
+.stranice{
+    list-style: none;
+}
+.stranice li{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    -webkit-text-stroke: 2px;
+    font-size: 20px;
+    display: inline-block;
+    margin-right: 80px;
+}
+.okvir{
+    width: 100%;
+    max-width: 650px;
+    background-color: rgba(0,0,0,0.5);
+    padding: 30px;
+    margin-top: 35px;
+    border-radius: 10px;
+    box-shadow: inset -2px 3px 3px whitesmoke;
+}
+.naziv{
+    color: white;
+    border-bottom: solid 1px white;
+    font-size: 30px;
+    font-weight: 600px;
+    text-align: center;
+    padding-bottom: 10px;
+    text-shadow: 2px 2px 2px gray;
+}
+.osnovnipodaci{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+.unos{
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    padding-bottom: 15px;
+}
+.unos label{
+    width: 100%;
+    color: white;
+    margin: 10px 0;
+    font-size: 20px;
+    font-weight: 400;
+}
+.unos input{
+    height: 40px;
+    width: 93%;
+    border: 2px solid gray;
+    border-radius: 7px;
+    padding: 0 10px;
+}
+.polNaslov{
+    color: whitesmoke;
+    font-size: 20px;
+    font-weight: 600;
+    border-bottom: 1px solid whitesmoke;
+}
+.odabirPola label{
+    padding: 0 25px 0 5px;
+}
+.odabirPola{
+    margin: 15px 0;
+    color: whitesmoke;
+}
+.odabirPola input,.submitDugme input{
+    cursor:pointer;
+}
+.politikaPriv{
+    margin-top: 30px;
+}
+.politikaPriv label{
+    color: whitesmoke;
+    font-weight: 500;
+    font-size: 17px;
+    padding-left: 10px;
+}
+.submitDugme{
+    margin-bottom: 10px;
+}
+.submitDugme input{
+    display: block;
+    border-radius: 10px;
+    width: 100%;
+    margin-top: 30px;
+    padding: 10px;
+    font-size: 20px;
+    color: white;
+    font-weight: 750;
+    background: rgba(137,207,240,0.5);
+}
+.submitDugme input:hover{
+    color: rgb(255,255,255);
+    background: rgba(10,52,99,0.8);
+}
+@media(max-width: 600px){
+    .okvir{
+        min-width:280px
+    }
+    .unos{
+        margin-bottom: 12px;
+        width: 100%;
+    }
+
+    .odabirPola{
+        display: flex;
+        justify-content: space-between;
+        width:100%;
+    }
+    .osnovnipodaci{
+        max-height: 380px;
+        overflow: auto;
+    }
+    .osnovnipodaci::-webkit-scrollbar{
+        width: 0;
+    }
+}
+@media(max-width:1100px){
+    .burger_meni{
+        display: block;
+        margin-right: 30px;
+        cursor: pointer;
+    }
+    .stranice{
+        position: absolute;
+        left:-100%;
+        display: flex;
+        flex-direction: column;
+        background-color:  whitesmoke;
+        width: 100%;
+        text-align: center;
+        top: 129px;
+        transition: 0.4s;
+    }
+    .stranice li{
+        margin: 16px 0;
+    }
+    .stranice.pomeri{
+        top:129px;
+        left: 0;
+    }
+
+}
+@media(max-width:380px){
+    .logo{
+        height: 120px;
+        width: 120px;
+    }
+    .burger_meni{
+        height: 50px;
+        width: 50px;
+        margin-right: 30px;
+    }
+}
+footer{
+    width: 100%;
+    height: 130px;
+    background-color: whitesmoke;
+    margin-top: auto;
+}
+#ft_slika{
+    display: block;
+    margin: auto;
+    width: 125px;
+    height: 125px;
+}

@@ -1,0 +1,265 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+header {
+    width: 100%;
+    height: 130px;
+    background-color: whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    display: block;
+    margin-left: 5%;
+    margin-bottom: 15px;
+    height: 150px;
+    width: 150px;
+}
+
+.burger_meni {
+    display: none;
+    height: 60px;
+    width: 60px;
+}
+
+.stranice {
+    list-style: none;
+}
+
+.stranice li {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    -webkit-text-stroke: 2px;
+    font-size: 20px;
+    display: inline-block;
+    margin-right: 80px;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), url(/img/pozadina.jpg);
+    background-size: cover;
+}
+
+footer {
+    width: 100%;
+    height: 130px;
+    background-color: whitesmoke;
+    margin-top: auto;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#ft_slika {
+    display: block;
+    width: 125px;
+    height: 125px;
+    margin: auto;
+}
+
+#ft_top {
+    display: none;
+    display: none;
+    width: 60px;
+    height: 60px;
+    margin-right: 15px;
+    cursor: pointer;
+}
+#ft_top:hover{
+    border-radius: 100%;
+    border: 3px solid aqua;
+}
+
+.o_nama {
+    width: 100%;
+    margin-top: 1%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.o_nama p {
+    width: 50%;
+    font-size: larger;
+    text-align: center;
+    line-height: 1.4;
+    color: rgb(220, 235, 247);
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 15px;
+    padding: 15px;
+}
+
+#kontaktN {
+    margin-top: 40px;
+    text-align: center;
+    color: rgb(201, 230, 255);
+}
+
+.kontakt {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.kucice {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 250px;
+}
+
+.slikaK {
+    float: left;
+    height: 60px;
+    width: 60px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 15px;
+    padding: 5px;
+}
+
+.kucaTxt {
+    text-align: center;
+    color: aliceblue;
+    padding: 10px;
+}
+
+.mapa {
+    height: 400px;
+    width: 500px;
+    margin-bottom: 10px;
+}
+
+@media(max-width:1100px) {
+    .burger_meni {
+        display: block;
+        margin-right: 30px;
+        cursor: pointer;
+    }
+
+    .stranice {
+        position: fixed;
+        left: -100%;
+        display: flex;
+        flex-direction: column;
+        background-color: whitesmoke;
+        width: 100%;
+        text-align: center;
+        top: 129px;
+        transition: 0.4s;
+    }
+
+    .stranice li {
+        margin: 16px 0;
+    }
+
+    .stranice.pomeri {
+        top: 129px;
+        left: 0;
+    }
+    #ft_slika{
+        margin-right: calc(50% - 140px);
+        margin-bottom: 10px;
+    }
+    #ft_top{
+        display: block;
+    }
+
+}
+
+@media(max-width: 780px) {
+    .o_nama {
+        margin-top: 3%;
+    }
+
+    .o_nama p {
+        line-height: 1;
+        font-size: 16px;
+        width: 70%;
+    }
+
+    #kontaktN {
+        margin-top: 20px;
+        font-size: 30px;
+    }
+
+    .kontakt {
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+
+    .slikaK {
+        margin-top: 8px;
+    }
+
+    .mapa {
+        margin-top: 20px;
+        width: 400px;
+        height: 300px;
+    }
+}
+
+@media(max-width: 420px) {
+    .logo {
+        height: 120px;
+        width: 120px;
+    }
+
+    .burger_meni {
+        height: 50px;
+        width: 50px;
+        margin-right: 30px;
+    }
+
+    .mapa {
+        height: 250px;
+        width: 90%;
+    }
+
+    .slikaK {
+        height: 50px;
+        width: 50px;
+    }
+
+    .kucice {
+        width: 65%;
+    }
+
+    .kucaTxt {
+        text-align: justify;
+        margin-left: 60px;
+        font-size: 15px
+    }
+}
+
+#kontaktN:hover {
+    color: #3dc281;
+}
+
+.o_nama p:hover {
+    font-size: 150%;
+    color: #52ffab;
+}
+
+.kucaTxt:hover {
+    font-size: 120%;
+    color: #3dc281;
+}
+
+a:hover {
+    color: darkcyan;
+    border-bottom: 2px solid cyan;
+}

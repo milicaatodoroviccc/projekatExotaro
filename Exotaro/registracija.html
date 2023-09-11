@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registracija</title>
+    <link rel="stylesheet" href="css/registracija.css" type="text/css">
+</head>
+<body>
+
+    <header class="meni">
+        <img src="img/logo.png" alt="Logo" class="logo">
+        <ul class="stranice">
+            <li><a href="index.html">POČETNA</a></li>
+            <li><a href="destinacije.html">DESTINACIJE</a></li>
+            <li><a href="o_nama.html">O NAMA</a></li>
+            <li><a href="registracija.html">REGISTRACIJA</a></li>
+        </ul>
+        <img src="img/burger_meni.png" alt="Burger_meni" class="burger_meni">
+    </header>
+     
+    <div class="okvir">
+        <h1 class="naziv">Registracija</h1>
+        <form action="#" onsubmit="return false">
+            <div class="osnovnipodaci">
+
+                <div class="unos">
+                    <label for="ime">Ime</label>
+                    <input type="text" id="ime" name="ime" placeholder="Unesite vaše ime"/>
+                </div>
+
+                <div class="unos">
+                    <label for="prezime">Prezime</label>
+                    <input type="text" id="prezime" name="prezime" placeholder="Unesite vaše prezime"/>
+                </div>
+
+                <div class="unos">
+                    <label for="email">Email</label>
+                    <input type="text" id="email" name="email" placeholder="Unesite vaš email"/>
+                </div>
+
+                <div class="unos">
+                    <label for="alias">Korisničko ime</label>
+                    <input type="text" id="alias" name="alias" placeholder="Unesite korisničko ime"/>
+                </div>
+
+                <div class="unos">
+                    <label for="lozinka">Lozinka</label>
+                    <input type="password" id="lozinka" name="lozinka" placeholder="Lozinka"/>
+                </div>
+
+                <div class="unos">
+                    <label for="potvrda">Potvrda lozinke</label>
+                    <input type="password" id="potvrda" name="potvrda" placeholder="Potvrda lozinke"/>
+                </div>
+            </div>
+
+            <div class="polPodaci">
+                <span class="polNaslov">Pol</span>
+                <div class="odabirPola">
+                    <input type="radio" name="pol" id="musko" checked="checked">
+                    <label for="musko">Muški</label>
+                    <input type="radio" name="pol" id="zensko">
+                    <label for="zensko">Ženski</label>
+                </div>
+            </div>
+
+            <div class="submitDugme">
+                <input type="submit" value="Registruj se" id="submitDugme">
+            </div>
+            <div class="politikaPriv">
+                <input type="checkbox" name="politika" id="politika">
+                <label for="politika">Prihvatam politiku privatnosti.</label>
+            </div>
+            
+        <script src="js/registracija.js"></script>
+        </form>
+    </div>
+    <footer> 
+        <img src="img/logo.png" alt="Logo" id="ft_slika">
+        
+    </footer> 
+</body>
+</html>
